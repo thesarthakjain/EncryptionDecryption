@@ -13,6 +13,6 @@ dec_obj = AES.new(key, mode, IV)
 enc_text = enc_obj.encrypt(plain_text)
 print("Encrypted text= ", enc_text)
 
-#decrypting the plain text
+#decrypting the cipher text
 dec_text = dec_obj.decrypt(enc_text)
 print("Decrypted text= ", dec_text.decode())
