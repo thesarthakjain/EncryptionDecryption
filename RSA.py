@@ -14,6 +14,6 @@ print("\nPublic key = ", pub_key)
 enc_text = pub_key.encrypt(plain_text, padding.OAEP(mgf=padding.MGF1(algorithm=hashes.SHA256()),algorithm=hashes.SHA256(),label=None))
 print("\nEncrypted text = ", enc_text)
 
-#decrypting the cypher text
+#decrypting the cipher text
 dec_text = pvt_key.decrypt(enc_text, padding.OAEP(mgf=padding.MGF1(algorithm=hashes.SHA256()),algorithm=hashes.SHA256(),label=None))
 print("\nDecrypted text = ", dec_text.decode())
